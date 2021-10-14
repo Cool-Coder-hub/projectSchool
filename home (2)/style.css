@@ -1,0 +1,25 @@
+/* Font family and text alignment for the whole page */
+body {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+/* Margins for header one */
+h1 {
+	margin-top: 48px;
+	margin-bottom: 48px;
+	
+}
+
+/* width and height for buttons */
+#button1, #button2{
+	height: 40px;
+  	width: 200px;
+	font-size: 24px;
+}
+
+/* height for dropdown menu */
+select{
+  height: 33px;
+}
+

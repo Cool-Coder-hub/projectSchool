@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="en">
+	
+	<!--- heading of the page and titling this page--->
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Guess the Number</title>
+
+		<link rel="stylesheet" href="style.css">
+				
+	</head>
+
+	<body>
+		
+		<!--- Heading One - Game title --->
+		<h1>Guess the Number</h1>
+		
+		<!--- Button for starting game. Carries out the startGame function in Javascript file --->
+		<button id="button1" onclick="startGame()">Start the Game</button>
+
+		<!--- Select and option dropdown menu template from w3schools  --->
+		<!--- Dropdown Menu for different game difficulty levels. After the onChange function is carried out in the 
+		Javascript file the value of each option is stored and carried out according to which level is selected --->
+		<select name="dropdownMenu" id="dropdownMenu" onChange="dropdownMenu()">
+			<option value="10 (level 1)">Easy: 1-10</option>
+			<option value="50 (level 2)">Normal: 1-50</option>
+			<option value="100 (level 3)">Hard: 1-100</option>
+		</select>
+
+		<!--- Message for Enter a number. Depending on which difficulty is selected from the dropdown menu the 
+		"maximumNumber" changes to the respective value --->
+		<p>Enter a number between 1 and <span id = "maximumNumber">10</span></p>
+
+		<!--- Input Box where the number is entered --->
+		<input type="number" id ="inputBox">
+
+		<br><br>
+
+		<!--- Button for making a guess. Carries out the makeGuess function in Javascript file  --->
+		<button id="button2" onclick="makeGuess()">Make a guess</button>
+
+		<p><b>Result</b></p>
+
+		<!--- Result Paragraph. Message displayed is changed depending on what the user guesses ( code in Javascript file)  --->
+ 		<p id="result">The result should be displayed here</p>
+
+		<p><b>Number of Guesses</b></p>
+
+		<!--- Guess Paragraph. This shows the number of valid guesses the user has used in the input box  --->
+		<p id="guessNumber">The number of guesses should be displayed here</p>
+
+		<!--- Connecting Javascript file to HTMl to link them both  --->
+		<script src="game.js"></script>
+		
+	</body>
+	
+</html>
